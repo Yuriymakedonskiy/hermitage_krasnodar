@@ -1,0 +1,888 @@
+@import url("../../src/fonts/TTCommons/stylesheet.css");
+$color-dark: #1E1C1F;
+$color-divider: #5B524D;
+$color-gold: #D3B6A5;
+$color-grey: #B8B3AE;
+$color-gold-light: #F0E1D9;
+$color-white: #FFFFFF;
+
+$color-gold-hover: #FAE0CF;
+$color-disabled: #B6B6B6;
+
+@font-face {
+    font-family: "TT Ricordi";
+    src: url("../fonts/TT\ Ricordi\ Allegria\ Trial\ Regular.ttf");
+}
+
+.footer__container {
+    margin: 50px;
+    overflow: hidden;
+}
+
+.footer__logo {
+    border-top: 1px solid #5B524D;
+    padding-top: 40px;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+.contacts__container {
+    // margin: 50px;
+    // overflow: hidden;
+    position: relative;
+    font-family: 'TT Ricordi';
+    // justify-content: space-between;
+    // display: flex;
+    // align-items: flex-start;
+    // flex-direction: column;
+    // width: 100%;
+    display: flex;
+    height: 470px;
+    // margin-bottom: 300px;
+
+    align-items: stretch; // Центрирование по вертикали
+    justify-content: space-between; // Равномерное распределение элементов
+    padding: 10px;
+
+    // Адаптивность
+    @media (max-width: 768px) {
+        flex-direction: column; // На мобильных устройствах элементы будут располагаться в колонку
+        align-items: flex-start; // Выравниваем элементы по началу
+    }
+}
+
+
+// /* awards */
+
+.awards {
+    flex: 0.3;
+    align-items: stretch;
+
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+    gap: 30px;
+    margin-top: 0;
+}
+
+/* main/divider */
+.divider {
+
+    border-bottom: 1px solid #5B524D;
+    width: 100%;
+    // padding-top: 40px;
+    margin: 40px auto 60px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+
+
+// /* наши награды */
+.our_awards_h4 {
+
+    // width: 416px;
+    // height: 42px;
+    /* desktop/h4 */
+    font-family: 'TT Ricordi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    /* identical to box height, or 42px */
+    text-transform: uppercase;
+    align-items: stretch;
+
+    /* main/white */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    // flex: none;
+    // order: 0;
+    // align-self: stretch;
+    // flex-grow: 0;
+}
+
+
+
+/* contacts */
+.contacts__container {
+
+    /* Auto layout */
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // padding: 0px;
+    // gap: 30px;
+
+    // width: 564px;
+    // height: 255px;
+
+
+    // /* Inside auto layout */
+    // flex: none;
+    // order: 1;
+    // flex-grow: 1;
+}
+
+.contacts__container-right {
+    flex: .1;
+    display: flex;
+    width: 30%;
+    padding: 6px;
+
+    flex-direction: column;
+    // height: auto;
+    align-items: stretch;
+    text-align: left;
+    gap: 30px;
+    // padding-top: 90px;
+    // margin-bottom: -90px;
+    // width: 50%;
+
+}
+
+// /* Телефон */
+.contacts__container_tel {
+    // margin: 30PX 0 10PX 0;
+    // gap: 20px;
+    // width: 564px;
+    // height: 21px;
+    line-height: 20.8px;
+    /* desktop/main */
+    font-family: 'TT Commons';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    /* identical to box height, or 21px */
+
+    /* main/grey */
+    color: #fff;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+// /* +7 861 211-66-38 */
+.contacts__container_tel_subtitle {
+    padding-top: 10px;
+    width: 564px;
+    // height: 36px;
+
+    /* desktop/subtitle */
+    font-family: 'TT Ricordi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+    text-transform: uppercase;
+
+    /* main/white */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+// /* Адрес */
+.contacts__container_adress_title {
+    padding-bottom: 10px;
+    // width: 564px;
+    height: 21px;
+
+    /* desktop/main */
+    font-family: 'TT Commons';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+    /* main/grey */
+    color: #fff;
+
+}
+
+
+// /* г. Краснодар, ул. Конгрессная, д. 31 */
+.contacts__container_adress_subtitle {
+    // padding-top: 10px;
+    height: auto;
+
+    /* desktop/subtitle */
+    font-family: 'TT Ricordi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+    text-transform: uppercase;
+
+    /* main/white */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+
+// /* Email */
+.contacts__container_email,
+.contacts__container_adress {
+    // margin: -0PX 0;
+    // width: 564px;
+    height: auto;
+    // менять
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+
+    /* desktop/main */
+    font-family: 'TT Commons';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+    /* main/grey */
+    color: #fff;
+
+
+    /* Inside auto layout */
+    // flex: none;
+    // order: 0;
+    // align-self: stretch;
+    // flex-grow: 0;
+}
+
+
+// /* sales23@usimail.ru */
+.contacts__container_email_subtitle,
+.contacts__container_adress_subtitle {
+    padding-top: 10px;
+
+    // width: 564px;
+    // height: 36px;
+
+    /* desktop/subtitle */
+    font-family: 'TT Ricordi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+    text-transform: uppercase;
+
+    /* main/white */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+// /* contacts */
+.contacts__container_form {
+    position: relative;
+    padding-top: 18px;
+    width: 28%;
+    // flex: .1;
+    // display: flex;
+    flex-direction: column;
+    // padding-right: 20px;
+    gap: 30px;
+    // /* Auto layout */
+    // // display: none;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
+    // align-items: flex-start;
+    // padding: 0px;
+    // gap: 60px;
+    // isolation: isolate;
+
+    // // width: 416px;
+    // height: 394px;
+
+
+    // /* Inside auto layout */
+    // flex: none;
+    // order: 2;
+    // flex-grow: 0;
+    // overflow: hidden;
+}
+
+
+// /* txt */
+.contacts__container_form_text {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    // height: 226px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+// /* inputs */
+
+.contacts__container_form_inputs {
+    /* Auto layout */
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // padding: 0px;
+    // gap: 16px;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px 0px 16px;
+    gap: 24px;
+
+    width: 100%;
+    // height: 112px;
+
+    color: $color-white;
+    border-bottom: 1px solid #A39D96;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+    &::placeholder {
+        color: $color-disabled;
+
+    }
+}
+
+
+// /* name */
+.contacts__container_form_inputs_name {
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px 0px 6px;
+    gap: 24px;
+
+    // width: 416px;
+    height: 48px;
+
+    /* main/grey */
+    border-bottom: 1px solid $color-gold;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+// /* Номер телефона */
+.contacts__container_form_inputs_phone {
+
+    // width: 416px;
+    height: 21px;
+
+    /* desktop/main */
+    font-family: 'TT Commons';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+    /* main/grey */
+    color: #A39D96;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+}
+
+// /* name */
+
+// box-sizing: border-box;
+
+// /* Auto layout */
+// display: flex;
+// flex-direction: row;
+// align-items: flex-end;
+// padding: 0px 0px 6px;
+// gap: 24px;
+
+// width: 416px;
+// height: 48px;
+
+// /* main/grey */
+// border-bottom: 1px solid #A39D96;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 1;
+// align-self: stretch;
+// flex-grow: 0;
+
+
+// /* Номер телефона */
+
+// width: 416px;
+// height: 21px;
+
+// /* desktop/main */
+// font-family: 'TT Commons';
+// font-style: normal;
+// font-weight: 300;
+// font-size: 16px;
+// line-height: 130%;
+// /* identical to box height, or 21px */
+
+// /* main/grey */
+// color: #A39D96;
+
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 1;
+
+// /* dropdown */
+.contacts__container_form_dropdown {
+    position: relative;
+    /* Auto layout */
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // padding: 0px;
+    // gap: 16px;
+
+    // width: 416px;
+    height: 84px;
+    // width: 40px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+/* Удобное время для звонка */
+.contacts__container_form_subtitle {
+    // width: 416px;
+    // height: 36px;
+
+    /* desktop/subtitle */
+    font-family: 'TT Ricordi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: -10px;
+    padding-bottom: 15px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+    text-transform: uppercase;
+
+    /* main/white */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+/* time */
+.contacts__container_form_time {
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 32px;
+    background: none;
+    position: absolute;
+    height: 32px;
+    left: 0px;
+    right: 0px;
+    bottom: 70px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+
+
+
+
+    .from {
+        &.active {
+            .contacts__container_form_time_name_chevron {
+                transform: rotate(180deg);
+                // transition: transform 0.4s ease; // Плавная анимация
+            }
+            .from_list{
+                display: flex;
+            }
+        }
+    }
+
+    .to {
+        &.active {
+            .contacts__container_form_time_name_chevron {
+                transform: rotate(180deg);
+                // transition: transform 0.4s ease; // Плавная анимация
+            }
+            .to_list{
+                display: flex;
+            }
+        }
+    }
+}
+
+/* name */
+.contacts__container_form_time_name {
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 8px;
+    gap: 24px;
+    background: none;
+    // width: 192px;
+    height: 32px;
+
+    /* main/grey */
+    border-bottom: 1px solid #A39D96;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    .footer-change-time_list {
+        position: absolute;
+        top: 32px;
+        left: 0;
+        display: none;
+
+        list-style: none;
+        z-index: -11;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+
+        li {
+            list-style-type: none;
+            // width: 100%;
+            background: #1E1C1F;
+            color: #fff;
+            height: 48px;
+            padding: 0 16px;
+            border: 1px solid #fff;
+            border-top: none;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            transition: 0.3s;
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+            
+            &:hover{
+                background-color: $color-white;
+                
+                color: #1E1C1F;
+            }
+        
+        
+        }
+
+    }
+}
+
+.contacts__container_form_time_name_text {
+
+    /* с 10:00 */
+
+    // width: 144px;
+    height: 21px;
+
+    /* desktop/main */
+    font-family: 'TT Commons';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+    /* main/grey */
+    color: #A39D96;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+}
+
+/* icons/ chevron-down */
+.contacts__container_form_time_name_chevron {
+
+    // width: 24px;
+    // height: 24px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    transition: transform .3s ease;
+
+
+    /* chevron-down */
+
+    position: absolute;
+    width: 14.14px;
+    height: 8.24px;
+    right: 4.93px;
+    top: 5px;
+
+    /* main/white */
+    // background: #FFFFFF;
+
+}
+
+
+
+/* info */
+.contacts__container_form_info {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 16px;
+
+    // width: 416px;
+    height: 108px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+
+// /* Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования платформой */
+.contacts__container_form_data {
+    // width: 416px;
+    height: 32px;
+    line-height: 15.6px;
+    text-align: left;
+    // margin-top: 40px;
+
+    /* desktop/info */
+    font-family: 'TT Commons';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    /* or 16px */
+
+    /* main/grey */
+    color: #A39D96;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+.ermitazh-anim {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    .footer-xray-asset {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        /* Контур поверх круга */
+    }
+
+    img {
+        //   display: block;
+        position: relative;
+        z-index: 1;
+        //   border-top: 1px solid #5B524D;
+        width: 100%;
+        display: flex;
+        //   height:80%;
+        align-items: center;
+        text-align: center;
+        //   height: 100%;
+    }
+
+
+    .logo_txt {
+        z-index: -11;
+    }
+
+    .ermitazh-circle-anim {
+        position: absolute;
+        background-color: $color-dark; // Задаем цвет круга
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: -10; // Круг под SVG
+        width: 150px;
+        height: 150px;
+        transform: scale(0); // Начальное состояние — невидимый объект
+        transition: transform .4s ease, opacity .4s; // Плавная анимация как появления, так и исчезновения
+        opacity: 0;
+
+        &.active {
+            transform: scale(1); // Увеличиваем круг
+            opacity: 1; // Плавное появление
+        }
+    }
+
+    /* Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 ГК РФ. */
+
+}
+
+.footer_copyright {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 50px 0;
+
+    span {
+
+        max-width: 565px;
+        height: auto;
+        // text-align: left;
+        /* desktop/info */
+        font-family: 'TT Commons';
+        font-style: normal;
+        font-weight: 400;
+
+        font-size: 16px;
+        line-height: 120%;
+        /* or 16px */
+
+        /* main/grey */
+        color: $color-grey;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+}
+
+.site__dev {
+    display: flex;
+    flex-direction: column;
+
+
+
+    /* https://pixel2.studio/ */
+    .site__dev-link {
+
+        // width: 126px;
+        // height: 21px;
+
+        /* desktop/main */
+        font-family: 'TT Commons';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 130%;
+        /* identical to box height, or 21px */
+        text-align: right;
+        padding-top: 5px;
+
+        /* main/white */
+        color: #FFFFFF;
+
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+}

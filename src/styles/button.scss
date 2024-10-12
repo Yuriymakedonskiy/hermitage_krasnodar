@@ -1,0 +1,75 @@
+@import url("../../src/fonts/TTCommons/stylesheet.css");
+$color-dark: #1E1C1F;
+$color-divider: #5B524D;
+$color-gold: #D3B6A5;
+$color-grey: #B8B3AE;
+$color-gold-light: #F0E1D9;
+$color-white: #FFFFFF;
+$color-gold-hover: #FAE0CF;
+$color-disabled: #B6B6B6;
+
+.btn_caps {
+    font-size: 18px;
+    line-height: 150%;
+    /* или 24px */
+    font-weight: 400;
+    /* Medium */
+  font-family: 'TT Commons', sans-serif;
+
+    text-transform: uppercase;
+    /* Заглавные буквы */
+    box-sizing: border-box;
+    display: flex;
+    color: $color-white;
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding-top: 5px;
+    margin: 0px 0 0 30px;
+    width: 220px;
+    height: 45px;
+    border-radius: 30px;
+    transition: .25s ease-in-out;
+
+}
+
+/* state=Default, type=Outline, colors=light */
+
+
+.btn-border-white {
+    background-color: $color-dark;
+    color: $color-white;
+    border: 1px solid $color-white;
+    cursor: pointer;
+    &:hover{
+        border-color: $color-gold;
+        color: $color-gold-hover;
+    }
+
+    &:focus{
+        border-color: $color-white;
+        color: $color-white;
+    }
+
+}
+
+.btn-background-gold {
+    background-color: $color-gold;
+    color: $color-dark;
+    cursor: pointer;
+    border: 1px solid $color-gold;
+    &:hover{
+        background-color: $color-gold-light;
+        color: $color-dark;
+    }
+
+    &:focus{
+    background-color: $color-gold;
+    color: $color-dark;
+    }
+    @media (max-width: 768px) {
+        display: none;
+      }
+}

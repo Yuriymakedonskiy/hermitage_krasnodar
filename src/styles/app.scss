@@ -1,0 +1,156 @@
+@import url("../../src/fonts/TTCommons/stylesheet.css");
+$color-dark: #1E1C1F;
+$color-divider: #5B524D;
+$color-gold: #D3B6A5;
+$color-grey: #B8B3AE;
+$color-gold-light: #F0E1D9;
+$color-white: #FFFFFF;
+
+$color-gold-hover: #FAE0CF;
+$color-disabled: #B6B6B6;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  font-size: 100%; // 16px по умолчанию
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "TTCommons", Arial, sans-serif;
+  margin: 0;
+  background-color: $color-dark;
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  background: gray;
+}
+
+// Main palette
+.main {
+  &-dark {
+    background-color: $color-dark;
+  }
+  &-divider {
+    background-color: $color-divider;
+  }
+  &-gold {
+    background-color: $color-gold;
+  }
+  &-grey {
+    background-color: $color-grey;
+  }
+  &-gold-light {
+    background-color: $color-gold-light;
+  }
+  &-white {
+    background-color: $color-white;
+  }
+}
+
+// State palette
+.state {
+  &-gold-hover {
+    background-color: $color-gold-hover;
+  }
+  &-disabled {
+    background-color: $color-disabled;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+// _layout.scss
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex: 1;
+    padding: 15px;
+  }
+  
+  .col-6 {
+    width: 50%;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .col-6 {
+      width: 100%;
+    }
+  }
+  
+h1 {
+    font-size: 92px;
+    line-height: 110px;
+    font-weight: 400; 
+  }
+  
+
+h2 {
+    font-size: 64px;
+    line-height: 110px;
+    font-weight: 400; 
+ 
+}
+.subtitle {
+    font-size: 24px;
+    line-height: 150%; /* или 36px */
+    font-weight: 300; /* Light */
+  }
+  
+  
+  .main {
+    font-size: 16px;
+    line-height: 150%; /* или 24px */
+    font-weight: 300; /* Light */
+  }
+  
+
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+a {
+  color: #007bff;
+  &:hover {
+    color: #0056b3;
+  }
+}

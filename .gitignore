@@ -1,0 +1,77 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+
+# Logs
+logs/
+*.log
+logs/*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+lib-cov/
+coverage/
+.cache/
+
+# Environment variables
+.env
+.env.*.local
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build files
+dist/
+build/
+out/
+*.js.map
+*.css.map
+*.html.map
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# Large assets (images, videos, etc.) - if you're hosting them elsewhere
+public/uploads/
+assets/images/
+assets/videos/
+src/images
+
+
+# Vercel-specific
+.vercel/
+
+# Test coverage
+coverage/
+
+# Logs
+*.log
+
+# Optional npm cache directory
+.npm/

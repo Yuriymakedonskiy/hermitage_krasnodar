@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "TT Ricordi";
+  src: url("../fonts/TT\ Ricordi\ Allegria\ Trial\ Regular.ttf");
+}
+
+$color-dark: #1E1C1F;
+$color-divider: #5B524D;
+$color-gold: #D3B6A5;
+$color-grey: #B8B3AE;
+$color-gold-light: #F0E1D9;
+$color-white: #FFFFFF;
+
+$color-gold-hover: #FAE0CF;
+$color-disabled: #B6B6B6;
+
+
+
+.offers-button-more {
+  position: absolute;
+  bottom: 40px;
+  /* Отступ от нижнего края */
+  right: 190px;
+  /* Отступ от правого края */
+  font-family: "TT Ricordi";
+  font-size: 16px;
+  color: $color-gold;
+  background: none;
+  border: none;
+  // display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  // display: flex;
+  // align-items: flex-end;
+  // padding-left: 110px;
+  // position: absolute;
+  // width: 267px;
+  height: 72px;
+  // left: 196px;
+  // top: 215px;
+  // align-items: center;
+}
+
+
+.offers-button-more .upper {
+  margin-left: 8px;
+  // margin-top: 100px;
+  // margin-bottom: 10px; /* Расстояние между текстом и линией */
+}
+
+.offers-button-more .line-wrapper {
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  margin-right: -140px;
+  margin-left: 37px;
+
+  display: flex;
+  // align-items: center;
+  justify-content: flex-end;
+  /* Линия идет до конца текста */
+}
+
+.offers-button-more .line {
+  width: 100%;
+  height: 1px;
+  background-color: $color-gold;
+  position: absolute;
+  margin-right: 30px;
+
+  top: 50%;
+}
+
+.offers-button-more .circle {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #D6B19B;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.30s ease;
+
+  margin-left: 20px;
+  position: relative;
+}
+
+.offers-button-more .circle:before {
+  content: '→';
+  color: $color-gold;
+  opacity: 1;
+  margin-top: 0;
+  overflow: hidden;
+  font-size: 1.4rem;
+}
+
+.offers-button-more .lower {
+  margin-right: -80px;
+}
+
+
+
+
+// @keyframes fade {
+//   from {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+
+//   to {
+//     opacity: 0;
+//     visibility: hidden;
+//     display: none;
+//   }
+// }
+
+// @-webkit-keyframes fade {
+//   from {
+//     opacity: 1;
+//     -webkit-backface-visibility: visible;
+//   }
+
+//   to {
+//     opacity: 0;
+//     -webkit-backface-visibility: visible;
+//     display: none;
+
+//   }
+// }
+
+
+
+.offers-button-more:hover {
+  // .line {
+  //   padding-top: 80px;
+  //   transition: 1.30s ease-in-out;
+
+  // }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 10px 0;
+
+    // transform-origin: center; 
+    // transition: transform 1s ease;
+    // animation: fade 1s ease forwards;
+    // animation-delay: 1.9s;
+    // -webkit-animation: fade 1s ease forwards;
+    // -webkit-animation-delay: 1.9s;
+    // -moz-animation: fade 1s ease forwards;
+    // -moz-animation-delay: 1.9s;
+  }
+}

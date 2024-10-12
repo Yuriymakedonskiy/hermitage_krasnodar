@@ -1,0 +1,98 @@
+@import url("../../src/fonts/TTCommons/stylesheet.css");
+$color-dark: #1E1C1F;
+$color-divider: #5B524D;
+$color-gold: #D3B6A5;
+$color-grey: #B8B3AE;
+$color-gold-light: #F0E1D9;
+$color-white: #FFFFFF;
+
+$color-gold-hover: #FAE0CF;
+$color-disabled: #B6B6B6;
+
+.header {
+    position: sticky;
+    top: 0;
+    /* Sticks to the top of the viewport */
+    z-index: 1000;
+    background-color: $color-dark;
+    /* Optional: Transparent background */
+    transition: opacity 0.5s ease;
+    /* Smooth fade-out transition */
+    // padding: 10px 0;
+    display: flex;
+    justify-content: space-between; // Элементы будут на противоположных краях
+    align-items: center; // Выровнять элементы по вертикали
+    width: 100%; // Ширина на всю страницу
+
+    padding: 25px 78px; // Отступы слева и справа
+
+    // Левая часть (логотип и кнопка border white)
+    .header__left {
+        display: flex;
+        align-items: center; // Выровнять по вертикали
+
+        .header__logo {
+            margin-top: 0px;
+            justify-content: flex-start; // Привязать к левому краю
+            cursor: pointer;
+            width: 35%;
+            margin-right: 30px; // Отступ между логотипом и кнопкой
+        }
+    }
+
+    // Правая часть (бургер, номер телефона и кнопка background gold)
+    .header__right {
+        display: flex;
+        align-items: center; // Выровнять по вертикали
+
+        justify-content: flex-end; // Привязать к правому краю
+
+        // align-items: center; // Выровнять по вертикали
+
+        .header__burger {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            // height: 3px; // Увеличиваем толщину линий
+            
+            svg {
+                width: 60px;
+                margin-top: 7px;
+                height: 40px;
+            }
+
+            .rect-top,
+            .rect-bottom {
+                transition: all 0.3s ease-in-out;
+                transform-origin: center; // Определяем центр как точку вращения
+                height: 2px; // Толщина линий
+
+            }
+
+            &.active {
+                .rect-top {
+                    transform: translateY(6px) rotate(45deg); // Смещаем и поворачиваем верхнюю линию
+                }
+
+                .rect-bottom {
+                    transform: translateY(-6px) rotate(-45deg); // Смещаем и поворачиваем нижнюю линию
+                }
+            }
+        }
+
+
+        .header__number {
+            font-family: 'TT Commons';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            width: 120px;
+            margin: 5px 50px 0 40px;
+            cursor: pointer;
+
+        }
+
+    }
+}

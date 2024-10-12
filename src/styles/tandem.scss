@@ -1,0 +1,148 @@
+@import url("../../src/fonts/TTCommons/stylesheet.css");
+$color-dark: #1E1C1F;
+$color-divider: #5B524D;
+$color-gold: #D3B6A5;
+$color-grey: #B8B3AE;
+$color-gold-light: #F0E1D9;
+$color-white: #FFFFFF;
+
+$color-gold-hover: #FAE0CF;
+$color-disabled: #B6B6B6;
+
+@font-face {
+  font-family: "TT Ricordi";
+  src: url("../fonts/TT\ Ricordi\ Allegria\ Trial\ Regular.ttf");
+}
+
+
+.tandem__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  margin-top: -50px;
+  color: #fff; // Белый цвет текста
+
+  &:hover {
+    .tandem__h1 {
+      transform: translateY(-100px); // Двигаем заголовок вправо
+    }
+
+    .tandem__container_text-content {
+      transition-delay: 0.8;
+      opacity: 1;
+      transform: translateY(-50px) translateX(50px); // Двигаем заголовок вправо
+    }
+  }
+  
+}
+
+
+.tandem__container_text-content {
+  width: 31%;
+  opacity: 0;
+  margin: 50px;
+  transition: transform 1s ease, opacity 1s ease; // Плавный переход для всех элементов
+  transform: translateX(-350px) translateY(50px); // Двигаем заголовок вправо
+  z-index: -10;
+  padding-right: 20px;
+  padding-top: 270px;
+}
+
+.tandem__h1 {
+  /* Тандем искусства и природы */
+  transition: transform 1.5s ease; // Плавный переход для всех элементов
+
+  position: absolute;
+  width: 70vh;
+  height: 303px;
+  z-index: 10;
+  left: 60px;
+  top: calc(75% - 303px/2 + 0.5px);
+
+  /* desktop/h1 */
+  font-family: 'TT Ricordi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 66px;
+  line-height: 110%;
+  /* or 101px */
+  text-transform: uppercase;
+
+  /* main/white */
+  color: #FFFFFF;
+
+
+
+}
+
+.tandem__container_text-content-title {
+  /* Гулять по собственному двору словно по музею — это Эрмитаж. */
+  /* desktop/subtitle */
+  font-family: 'TT Ricordi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+
+  line-height: 150%;
+  /* or 36px */
+  text-transform: uppercase;
+  /* main/gold */
+  color: $color-gold;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.tandem__container_text-content_sub_title {
+
+  /* Аллея авангардистов пронизывает весь Квартал. Она предлагает резидентам прогуляться по Скверу Малевича, а затем очутиться на площади Кандинского. После этого вы можете насладиться всеми оттенками изумрудного на Зеленом променаде Рязановой и завершить это путешествие соприкосновением с абстракционизмом на Площади Лисицкого. */
+
+  // width: 416px;
+  // height: 147px;
+
+  /* desktop/main */
+  font-family: 'TT Commons';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+  /* or 21px */
+
+  /* main/white */
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+
+.image-content {
+  width: 70%;
+  margin-left: 40vh;
+  overflow: hidden;
+
+  img {
+    /* Rectangle 906 */
+    scale: 1.35;
+    margin: 0px 0 0 20px;
+
+    height: 500px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+
+    // position: absolute;
+
+    // left: 299px;
+    // top: 0px;
+    // bottom: 0px;
+
+    // object-fit: cover;
+  }
+}
